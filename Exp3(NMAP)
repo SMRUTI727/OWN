@@ -1,0 +1,22 @@
+Objective 1: IP / Host Discovery
+Command:   ping -c 4 192.168.1.10
+           nmap -sn 192.168.1.10
+
+Objective 2: TCP Scan
+Command:  nmap -sT 192.168.1.10
+
+Objective 3: UDP Scan
+Command:  sudo nmap -sU 192.168.1.10
+
+Objective 4: FIN Scan
+Command:  sudo nmap -sF 192.168.1.10
+
+Objective 5: NULL Scan
+Command:  sudo nmap -sN 192.168.1.10
+
+Objective 6: XMAS Scan
+Command:  sudo nmap -sX 192.168.1.10
+
+Objective 7: FTP Service Scan
+Command:  nmap -p 21 192.168.1.10
+          nmap -sV -p 21 192.168.1.10
