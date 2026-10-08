@@ -10,3 +10,4 @@ Command:  aircrack-ng -w lab-wordlist.txt -b <BSSID> lab-wifi-01.cap
 KEY FOUND! [ recovered_password ]
 
 Objective 4 — Submit the Recovered Passphrase
+ answer [answer]
