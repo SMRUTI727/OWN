@@ -1,11 +1,4 @@
-Objective 1: Baseline ARP Table
-Command:   ip neigh show
-
-
-Objective 3: Detect Duplicate Gateway Mapping- Observe changes in gateway address mappings
-Command:  arpwatch -i eth0 -d
-
-Objective 4: Promiscuous Mode Check- Determine whether eth0 is in promiscous mode
-Command:  ip link show eth0    //Check for PROMISC
-      // If PROMISC appears, promiscuous mode is enabled.
-
+arp -a
+ip neighbor show
+arpwatch -i eth0 -d
+ip link show eth0
