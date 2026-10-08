@@ -6,3 +6,5 @@ Objectice 2: 2. Filter HTTP Requests
 "http"
 
 Objective 3: http.request.method == POST
+
+answer [password]
