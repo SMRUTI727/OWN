@@ -1,0 +1,8 @@
+Objective 1: 1. Open  the SUpplied PCAP
+Command: ls
+         tshark -r lab-passwords.pcap
+
+Objectice 2: 2. Filter HTTP Requests
+"http"
+
+Objective 3: http.request.method == POST
