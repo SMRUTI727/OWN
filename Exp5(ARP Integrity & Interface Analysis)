@@ -1,0 +1,17 @@
+Objective 1: Baseline ARP Table
+Command:   ip neigh show
+           arp -n
+
+Objective 2: Neighbor Table Inspection
+Command:   ip neigh show dev eth0
+           ip -s neigh show dev eth0
+
+Objective 3: Detect Duplicate Gateway Mapping- Observe changes in gateway address mappings
+Command:  ip neigh show 192.168.1.1         //First check the gateway mapping
+          ping -c 3 192.168.1.1             //refresh the ARP entry
+          ip neigh show 192.168.1.1         //check it again
+
+Objective 4: Promiscuous Mode Check- Determine whether eth0 is in promiscous mode
+Command:  ip link show eth0    //Check for PROMISC
+      // If PROMISC appears, promiscuous mode is enabled.
+      ip -details link show eth0
