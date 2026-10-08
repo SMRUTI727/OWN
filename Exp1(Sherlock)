@@ -1,0 +1,11 @@
+Objective 1: Check Sherlock Installation
+Command:-      sherlock --help
+               sherlock --version
+
+Objective 2: Search Username
+Command:-     sherlock smriti
+
+Objective 3: Save Enumeration Results
+Command:-     sherlock smriti > results.txt
+              ls
+              cat results.txt
