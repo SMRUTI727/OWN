@@ -1,0 +1,12 @@
+Objective 1 — Identify the WPA2 Capture
+Command:  ls
+          aircrack-ng lab-wifi-01.cap         //Record the ESSID and BSSID displayed.
+
+Objective 2 — Run Offline Wordlist Test
+Command:  aircrack-ng -w lab-wordlist.txt lab-wifi-01.cap
+          
+Objective 3 — Validate the WPA2 Key
+Command:  aircrack-ng -w lab-wordlist.txt -b <BSSID> lab-wifi-01.cap
+KEY FOUND! [ recovered_password ]
+
+Objective 4 — Submit the Recovered Passphrase
