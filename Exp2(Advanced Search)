@@ -6,7 +6,7 @@ Command:-    site:lab.test inurl:login
              site:example-lab.test inurl:login OR inurl:signin
 
 Objective 3. Netcraft Domain Reconnaissance — Investigate holding information
-Command:-    
+Command:-    https://searchdns.netcraft.com/
 
 
 Objective 4. DNSdumpster Subdomain Enumeration— Enumerate the domains DNS and Subdomains Records 
