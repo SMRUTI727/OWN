@@ -43,3 +43,6 @@ Right-click → Send to Repeater
 Then:
 Repeater → Send
 Verify that the response indicates successful login.
+
+
+answer [password]
