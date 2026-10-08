@@ -1,0 +1,45 @@
+Given:
+Username: student
+Target: /login
+Wordlist: wordlist.txt
+
+
+Objective 1: Open the deployed target
+Click Open target at the top-right of the lab.
+Use the login form:
+Username: student
+Password: <test password>
+// Submit it once with an incorrect password.
+
+Objective 2: Capture the login request- Capture an unsuccessful login request in Burp Suite Proxy
+In Burp Suite:
+Proxy → Intercept → Intercept ON
+Submit the login form.
+//You should capture something similar to:
+//POST /login HTTP/1.1
+...
+//Content-Type: application/x-www-form-urlencoded
+//username=student&password=test
+Right-click the request-> Send to Intruder
+
+
+Objective 3: Configure Intruder
+Go to: Intruder → Positions
+First click->  Clear §
+Select only the password value, for example:
+username=student&password=§test§
+Then go to:    Payloads → Payload type: Simple list
+Add/load:    wordlist.txt
+
+
+Objective 4: Identify the successful Response- Record the HTTP Status of the successful response using Status code. 
+Click: Start attack
+Look at the results table.
+So if the successful row shows, for example: Status: 302
+
+Objective 5:Confirm the credential
+Take the password from the successful Intruder row and send the request to:
+Right-click → Send to Repeater
+Then:
+Repeater → Send
+Verify that the response indicates successful login.
