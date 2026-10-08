@@ -1,10 +1,4 @@
-Objective 1: 1. Open  the SUpplied PCAP
-Command: ls
-         tshark -r lab-passwords.pcap
-
-Objectice 2: 2. Filter HTTP Requests
-"http"
-
-Objective 3: http.request.method == POST
-
-answer [password]
+Press Open lab-passwords.pcap
+http filter
+68 13.025000 192.168.56.22 192.168.56.30 HTTP 307 POST /login HTTP/1.1
+paste in terminal: answer labtest
